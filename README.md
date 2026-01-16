@@ -1,416 +1,313 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronDown, Code2, Briefcase, Mail, Github, Linkedin, ExternalLink, Star, ArrowRight, Zap, Network, Cpu, Cloud, Database, Gauge, Shield, Layers, Sparkles, TrendingUp, CheckCircle2 } from 'lucide-react';
+# 👨‍💻 Leonardo Nogueira - Arquiteto de Soluções IA & Full Stack Senior
 
-export default function ArchitectPortfolio() {
-  const [scrolled, setScrolled] = useState(false);
-  const [hoveredProject, setHoveredProject] = useState(null);
-  const [expandedSection, setExpandedSection] = useState(null);
-  const [activeTab, setActiveTab] = useState('overview');
+<div align="center">
 
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/leonardo-nogueira)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/leonardonogueiratech)
+[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:leonardo@email.com)
 
-  const corePillars = [
-    { 
-      title: '🧠 IA Generativa & LLMs',
-      desc: 'OpenAI, Azure OpenAI, AWS Bedrock, Claude, Gemini',
-      items: ['Copilots Internos', 'Agentes Inteligentes', 'RAG Avançado', 'Mitigação de Alucinações', 'Pipelines n8n + Automação'],
-      icon: Sparkles
-    },
-    { 
-      title: '🏗️ Arquitetura Full Stack',
-      desc: 'Soluções end-to-end, escaláveis e de alto impacto',
-      items: ['Next.js + React SSR/SSG', 'Node.js + Express + GraphQL', 'Microsserviços', 'APIs de Alta Performance', 'Design Systems'],
-      icon: Layers
-    },
-    { 
-      title: '☁️ Cloud & Infraestrutura',
-      desc: 'Azure e AWS em arquiteturas serverless',
-      items: ['Azure: Functions, App Services, Identity', 'AWS: Lambda, API Gateway, DynamoDB', 'CI/CD DevSecOps', 'Observabilidade & Monitoring', 'Disponibilidade 99.9%'],
-      icon: Cloud
-    },
-    { 
-      title: '⚙️ Engenharia & Boas Práticas',
-      desc: 'Excelência técnica em cada solução',
-      items: ['Clean Architecture & SOLID', 'DDD', 'Telemetria & Tracing Distribuído', 'Escalabilidade Horizontal', 'Redução de Débito Técnico'],
-      icon: Gauge
-    },
-  ];
+**Especialista em Arquitetura IA Generativa + Cloud + Full Stack**
 
-  const techStack = {
-    languages: ['TypeScript', 'JavaScript', 'Python', 'SQL'],
-    frontend: ['React', 'Next.js', 'TailwindCSS', 'Material UI', 'SPFx'],
-    backend: ['Node.js', 'Express', 'REST', 'GraphQL', 'Serverless'],
-    ai: ['OpenAI', 'Azure OpenAI', 'AWS Bedrock', 'Claude', 'Gemini', 'RAG', 'n8n'],
-    databases: ['SQL Server', 'PostgreSQL', 'MongoDB', 'DynamoDB', 'Prisma'],
-    cloud: ['Azure', 'AWS', 'Docker', 'Kubernetes', 'CI/CD'],
-    tools: ['Git', 'GitHub', 'GitLab', 'Observabilidade', 'Telemetria']
-  };
+![Profile Views](https://komarev.com/ghpvc/?username=leonardonogueiratech&color=0077B5)
 
-  const impactMetrics = [
-    { label: 'Redução de Tempo de Resposta', value: '60%', desc: 'Em sistemas críticos', icon: TrendingUp, color: 'from-green-500' },
-    { label: 'Automação Generativa', value: '40%', desc: 'Menos trabalho manual', icon: Zap, color: 'from-blue-500' },
-    { label: 'Redução de Erros', value: '95%', desc: 'Em fluxos críticos', icon: Shield, color: 'from-purple-500' },
-    { label: 'Disponibilidade', value: '99.9%', desc: 'Com escalabilidade horizontal', icon: CheckCircle2, color: 'from-cyan-500' },
-  ];
+</div>
 
-  const projects = [
-    {
-      title: 'Plataforma de Automação Generativa Corporativa',
-      desc: 'Solução end-to-end combinando Azure OpenAI, n8n, Python e Next.js para automações em documentos, OCR, processamento de dados em alto volume.',
-      impact: 'Processamento de 500K+ documentos/mês | Redução de 95% em erros',
-      architecture: ['Azure OpenAI', 'n8n', 'Python', 'PostgreSQL', 'Next.js', 'Serverless'],
-      category: 'ai-enterprise',
-      metrics: { docs: '500K+', accuracy: '99.2%', efficiency: '95%' }
-    },
-    {
-      title: 'Microserviços Escaláveis com Observabilidade Total',
-      desc: 'Arquitetura de microsserviços em Node.js/Express com GraphQL, implementando telemetria, tracing distribuído, CI/CD e alta disponibilidade.',
-      impact: 'Escalabilidade 10x | 99.99% uptime | Latência <100ms',
-      architecture: ['Node.js', 'Express', 'GraphQL', 'PostgreSQL', 'Kubernetes', 'Prometheus'],
-      category: 'architecture',
-      metrics: { uptime: '99.99%', latency: '<100ms', scale: '10x' }
-    },
-    {
-      title: 'Dashboard de IA com Real-time Analytics',
-      desc: 'Next.js + React com SSR otimizado, integração com modelos Claude/OpenAI para análise preditiva e visualizações em tempo real.',
-      impact: 'Interface 99th percentile | LCP 1.2s | Suporta 100K+ usuários',
-      architecture: ['Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Claude API', 'WebSocket'],
-      category: 'frontend-ai',
-      metrics: { users: '100K+', performance: '99th', latency: '1.2s' }
-    },
-    {
-      title: 'Pipeline de IA com Governança e Rastreabilidade',
-      desc: 'Solução completa Azure + AWS Bedrock + n8n para orquestração de LLMs com versionamento, validação automática e mitigação de alucinações.',
-      impact: 'Zero alucinações em produção | Auditoria completa | Escalável',
-      architecture: ['Azure', 'AWS Bedrock', 'n8n', 'PostgreSQL', 'Python', 'FastAPI'],
-      category: 'ai-governance',
-      metrics: { hallucinations: '0%', audit: '100%', latency: '<2s' }
-    },
-    {
-      title: 'Sistema de Integração Corporativa Multi-Cloud',
-      desc: 'Integração Azure + AWS com APIs REST/GraphQL, processamento de eventos em alta escala, mensageria robusta e disaster recovery.',
-      impact: '99.9% disponibilidade | 0 data loss | Multi-region failover',
-      architecture: ['Azure', 'AWS', 'REST API', 'GraphQL', 'Event-Driven', 'Kubernetes'],
-      category: 'cloud',
-      metrics: { availability: '99.9%', regions: '3+', failover: 'Auto' }
-    },
-    {
-      title: 'Copilot Inteligente para Processos Corporativos',
-      desc: 'Agente IA customizado integrado a sistemas legados, processando consultas em linguagem natural com raciocínio multi-step e feedback loops.',
-      impact: 'Reduz work manual em 40% | 99% acurácia em tarefas rotineiras',
-      architecture: ['Claude API', 'OpenAI', 'Node.js', 'React', 'Graph Database'],
-      category: 'ai-agent',
-      metrics: { accuracy: '99%', reduction: '40%', users: '5K+' }
-    },
-  ];
+---
 
-  const coreExpertise = [
-    { name: 'IA Generativa', level: 95, color: 'from-cyan-500' },
-    { name: 'Arquitetura Full Stack', level: 98, color: 'from-blue-500' },
-    { name: 'Cloud (Azure & AWS)', level: 96, color: 'from-purple-500' },
-    { name: 'Escalabilidade & Performance', level: 97, color: 'from-green-500' },
-    { name: 'DevSecOps & Observabilidade', level: 94, color: 'from-orange-500' },
-    { name: 'Governança & Segurança', level: 93, color: 'from-pink-500' },
-  ];
+## 🎯 Sobre Mim
 
-  const filterProjects = (category) => projects.filter(p => p.category === category || category === 'all');
+Arquiteto de Soluções especializado em transformar processos complexos em **sistemas escaláveis, inteligentes e orientados à IA Generativa**. 
 
-  return (
-    <div className="min-h-screen bg-white text-slate-900 overflow-hidden">
-      {/* Subtle background pattern */}
-      <div className="fixed inset-0 opacity-40 pointer-events-none" style={{
-        backgroundImage: 'radial-gradient(circle at 1px 1px, #e5e7eb 1px, transparent 1px)',
-        backgroundSize: '50px 50px'
-      }}></div>
+Combino engenharia de software, cloud architecture, automação generativa e desenvolvimento full stack para entregar soluções **corporativas de alto impacto** — da arquitetura ao deployment em produção.
 
-      {/* Header */}
-      <header className={`sticky top-0 z-40 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-xl border-b border-slate-200' : 'bg-white/40 backdrop-blur-md'}`}>
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg flex items-center justify-center text-white font-bold text-lg">⚙️</div>
-            <div className="text-xl font-bold text-slate-900">Leonardo Nogueira</div>
-            <div className="text-xs font-semibold text-cyan-600 bg-cyan-50 px-3 py-1 rounded-full">Senior Architect</div>
-          </div>
-          <div className="flex gap-8 items-center">
-            {['Expertise', 'Projetos', 'Tech Stack', 'Impacto'].map((item) => (
-              <a key={item} href="#" className="relative group text-sm font-medium text-slate-700 hover:text-blue-600 transition">
-                {item}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 group-hover:w-full transition-all duration-300"></span>
-              </a>
-            ))}
-          </div>
-        </nav>
-      </header>
+### ✨ Diferencial
 
-      {/* Hero Section */}
-      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <div className="inline-block">
-                <span className="text-xs font-bold text-blue-600 bg-blue-50 px-4 py-2 rounded-full border border-blue-200">ARCHITECT • AI EXPERT • FULL STACK SENIOR</span>
-              </div>
-              <h1 className="text-6xl sm:text-7xl font-bold text-slate-900 leading-tight">
-                Arquitetura de <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">Soluções Inteligentes</span>
-              </h1>
-              <p className="text-xl text-slate-600 leading-relaxed">
-                Especializado em transformar processos complexos em sistemas escaláveis, inteligentes e orientados à IA Generativa. Da arquitetura ao deployment, entrego soluções que reduzem 60% no tempo de resposta e 95% em erros operacionais.
-              </p>
-            </div>
+- 🧠 **IA Generativa**: Integração de OpenAI, Azure OpenAI, AWS Bedrock, Claude, Gemini e LLMs customizados
+- 🏗️ **Arquitetura Full Stack**: Design end-to-end com foco em escalabilidade e performance
+- ☁️ **Cloud Expert**: Azure e AWS em arquiteturas serverless, multi-region, disaster recovery
+- ⚙️ **Engenharia Sênior**: Clean Architecture, SOLID, DDD, observabilidade, DevSecOps
+- 📊 **Impacto Comprovado**: 60% redução em tempo de resposta, 95% menos erros, 99.9% uptime
 
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { label: 'IA Generativa', value: '95%' },
-                { label: 'Full Stack', value: '98%' },
-                { label: 'Cloud Ops', value: '96%' },
-                { label: 'Escalabilidade', value: '97%' }
-              ].map((stat, i) => (
-                <div key={i} className="bg-slate-50 border border-slate-200 rounded-lg p-4">
-                  <div className="text-2xl font-bold text-blue-600">{stat.value}</div>
-                  <div className="text-xs text-slate-600 mt-1">{stat.label}</div>
-                </div>
-              ))}
-            </div>
+---
 
-            <div className="flex gap-4">
-              <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-600/30 transition-all">
-                Explorar Soluções
-              </button>
-              <button className="px-8 py-3 bg-slate-100 text-slate-900 rounded-lg font-semibold border border-slate-200 hover:bg-slate-200 transition">
-                Contato
-              </button>
-            </div>
-          </div>
+## 📈 Impacto Arquitetural
 
-          {/* Right - Architecture Diagram */}
-          <div className="relative h-96 flex items-center justify-center">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-3xl opacity-30"></div>
-            
-            <div className="relative w-full h-full flex items-center justify-center">
-              <div className="text-center space-y-6">
-                <div className="space-y-3">
-                  <div className="flex justify-center gap-3">
-                    <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center text-2xl border-2 border-blue-400">🧠</div>
-                    <div className="w-16 h-16 bg-cyan-600 rounded-lg flex items-center justify-center text-2xl border-2 border-cyan-400">☁️</div>
-                    <div className="w-16 h-16 bg-blue-500 rounded-lg flex items-center justify-center text-2xl border-2 border-blue-300">🏗️</div>
-                  </div>
-                </div>
-                <div className="text-sm font-semibold text-slate-600">IA Generativa + Cloud + Full Stack</div>
-                <div className="pt-4 border-t border-slate-200">
-                  <p className="text-2xl font-bold text-slate-900">End-to-End Solutions</p>
-                  <p className="text-xs text-slate-500 mt-2">Enterprise Grade • Production Ready</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+| Métrica | Resultado | Descrição |
+|---------|-----------|-----------|
+| **Redução de Latência** | 60% | Otimização em sistemas críticos |
+| **Automação Generativa** | 40% menos trabalho manual | Pipelines IA com n8n + LLMs |
+| **Redução de Erros** | 95% | Fluxos críticos com validação IA |
+| **Disponibilidade** | 99.9% | Escalabilidade horizontal, multi-region |
+| **Alucinações LLM** | 0% em produção | Mitigação e versionamento automático |
 
-      {/* Core Pillars */}
-      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-slate-50 rounded-3xl">
-        <h2 className="text-4xl font-bold text-center mb-16">Pilares de Expertise</h2>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {corePillars.map((pillar, i) => {
-            const Icon = pillar.icon;
-            return (
-              <div 
-                key={i}
-                className="group bg-white border border-slate-200 rounded-2xl p-8 hover:border-blue-300 hover:shadow-lg transition-all cursor-pointer"
-                onClick={() => setExpandedSection(expandedSection === i ? null : i)}
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-slate-900">{pillar.title}</h3>
-                      <p className="text-sm text-slate-500 mt-1">{pillar.desc}</p>
-                    </div>
-                  </div>
-                  <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform ${expandedSection === i ? 'rotate-180' : ''}`} />
-                </div>
+---
 
-                <div className={`overflow-hidden transition-all duration-300 ${expandedSection === i ? 'max-h-48' : 'max-h-0'}`}>
-                  <div className="pt-4 border-t border-slate-100">
-                    <div className="flex flex-wrap gap-2">
-                      {pillar.items.map((item, j) => (
-                        <span key={j} className="px-3 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-full border border-blue-200">
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+## 🧠 Pilares de Expertise
 
-      {/* Impact Metrics */}
-      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h2 className="text-4xl font-bold text-center mb-4">Impacto Arquitetural Comprovado</h2>
-        <p className="text-center text-slate-600 mb-16">Métricas reais de projetos entregues</p>
+### 🤖 **IA Generativa & LLMs**
+Integração e operação de modelos avançados para automação, análise e inteligência corporativa.
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {impactMetrics.map((metric, i) => {
-            const Icon = metric.icon;
-            return (
-              <div key={i} className="bg-gradient-to-br ${metric.color} opacity-5 rounded-2xl border border-slate-200 p-8 group hover:border-slate-300 transition">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-600 text-white rounded-lg flex items-center justify-center mb-4">
-                  <Icon className="w-6 h-6" />
-                </div>
-                <div className="text-3xl font-bold text-slate-900">{metric.value}</div>
-                <div className="text-sm font-semibold text-slate-700 mt-2">{metric.label}</div>
-                <div className="text-xs text-slate-500 mt-2">{metric.desc}</div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+```
+✓ OpenAI / Azure OpenAI / AWS Bedrock / Claude / Gemini
+✓ Copilots Internos & Agentes Inteligentes
+✓ RAG (Retrieval-Augmented Generation) Avançado
+✓ Mitigação de Alucinações & Validações Automáticas
+✓ Pipelines n8n + Automação Generativa em Alto Volume
+✓ Governança, Versionamento & Rastreabilidade
+```
 
-      {/* Projects */}
-      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h2 className="text-4xl font-bold text-center mb-16">Soluções End-to-End Entregues</h2>
+### 🏗️ **Arquitetura Full Stack**
+Soluções end-to-end escaláveis, com foco em performance, segurança e user experience.
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, i) => (
-            <div
-              key={i}
-              className="group bg-white border border-slate-200 rounded-2xl p-6 hover:border-blue-300 hover:shadow-lg transition-all"
-              onMouseEnter={() => setHoveredProject(i)}
-              onMouseLeave={() => setHoveredProject(null)}
-            >
-              <div className="mb-4">
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-blue-600 transition mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-sm text-slate-600">{project.desc}</p>
-              </div>
+```
+Frontend:  React • Next.js • TypeScript • TailwindCSS • Material UI • SPFx
+Backend:   Node.js • Express • REST • GraphQL • Microsserviços
+Patterns:  Clean Architecture • SOLID • DDD • Event-Driven
+```
 
-              <div className="mb-4 pb-4 border-t border-slate-100">
-                <p className="text-xs font-semibold text-green-700 bg-green-50 px-3 py-2 rounded-lg inline-block">
-                  ✓ {project.impact}
-                </p>
-              </div>
+### ☁️ **Cloud & Infraestrutura**
+Arquiteturas em Azure e AWS com foco em disponibilidade, escalabilidade e observabilidade.
 
-              <div className="space-y-3">
-                <div className="flex flex-wrap gap-2">
-                  {project.architecture.map((tech, j) => (
-                    <span key={j} className="text-xs bg-slate-100 text-slate-700 px-2.5 py-1 rounded-full font-medium">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+```
+Azure:     Functions • App Services • Storage • Identity • Cognitive Services
+AWS:       Lambda • API Gateway • S3 • DynamoDB • Bedrock • EventBridge
+DevOps:    Docker • Kubernetes • CI/CD • GitHub Actions • Terraform
+```
 
-                <div className="grid grid-cols-3 gap-2 pt-3 border-t border-slate-100">
-                  {Object.entries(project.metrics).map(([key, value]) => (
-                    <div key={key} className="text-center">
-                      <div className="text-sm font-bold text-blue-600">{value}</div>
-                      <div className="text-xs text-slate-500 capitalize">{key}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+### ⚙️ **Engenharia & Boas Práticas**
+Excelência técnica, arquitetura resiliente e redução contínua de débito técnico.
 
-      {/* Tech Stack */}
-      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-slate-50 rounded-3xl">
-        <h2 className="text-4xl font-bold text-center mb-16">Stack Técnico Completo</h2>
+```
+✓ Clean Architecture & SOLID Principles
+✓ Domain-Driven Design (DDD)
+✓ Telemetria & Tracing Distribuído
+✓ Escalabilidade Horizontal & Vertical
+✓ Resiliência, Retry Policies, Circuit Breakers
+```
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {Object.entries(techStack).map(([category, techs]) => (
-            <div key={category} className="bg-white border border-slate-200 rounded-xl p-6">
-              <h3 className="text-sm font-bold text-blue-600 uppercase tracking-wide mb-4">
-                {category.replace(/([A-Z])/g, ' $1').trim()}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {techs.map((tech, i) => (
-                  <span key={i} className="px-3 py-1 bg-blue-50 text-slate-700 text-xs font-medium rounded-full border border-blue-200">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+---
 
-      {/* Expertise Levels */}
-      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h2 className="text-4xl font-bold text-center mb-16">Domínio Técnico</h2>
+## 🛠️ Stack Técnico Completo
 
-        <div className="space-y-6 max-w-3xl mx-auto">
-          {coreExpertise.map((skill, i) => (
-            <div key={i} className="space-y-2">
-              <div className="flex items-center justify-between">
-                <span className="font-semibold text-slate-900">{skill.name}</span>
-                <span className="text-sm font-bold text-blue-600">{skill.level}%</span>
-              </div>
-              <div className="w-full h-2 bg-slate-200 rounded-full overflow-hidden">
-                <div
-                  className={`h-full bg-gradient-to-r ${skill.color} transition-all duration-500`}
-                  style={{ width: `${skill.level}%` }}
-                ></div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+### **Linguagens**
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
 
-      {/* CTA */}
-      <section className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="bg-gradient-to-r from-blue-600 to-cyan-600 rounded-3xl p-12 text-white text-center">
-          <h2 className="text-4xl font-bold mb-4">Transforme Seus Processos com IA e Arquitetura</h2>
-          <p className="text-lg text-blue-50 mb-8 max-w-2xl mx-auto">
-            Especialista em criar soluções corporativas inteligentes que combinam IA Generativa, cloud e engenharia full stack para impacto real.
-          </p>
+### **IA & Automação**
+![OpenAI](https://img.shields.io/badge/-OpenAI-412991?style=flat&logo=openai&logoColor=white)
+![Azure OpenAI](https://img.shields.io/badge/-Azure%20OpenAI-0078D4?style=flat&logo=microsoft-azure&logoColor=white)
+![AWS Bedrock](https://img.shields.io/badge/-AWS%20Bedrock-FF9900?style=flat&logo=amazonaws&logoColor=white)
+![Claude](https://img.shields.io/badge/-Claude-9333EA?style=flat&logoColor=white)
+![n8n](https://img.shields.io/badge/-n8n-FF6B6B?style=flat&logoColor=white)
+![RAG](https://img.shields.io/badge/-RAG-4B8BBE?style=flat&logoColor=white)
 
-          <div className="flex gap-4 justify-center flex-wrap">
-            <button className="px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition">
-              Agendar Consulta
-            </button>
-            <button className="px-8 py-3 bg-white/20 text-white rounded-lg font-semibold border border-white hover:bg-white/30 transition">
-              Ver Documentação
-            </button>
-          </div>
-        </div>
-      </section>
+### **Frontend**
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/-Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+![Material UI](https://img.shields.io/badge/-Material%20UI-007FFF?style=flat&logo=mui&logoColor=white)
 
-      {/* Footer */}
-      <footer className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-200 text-center">
-        <div className="space-y-4">
-          <p className="text-slate-600">
-            © 2024 Leonardo Nogueira • Architect • Full Stack Senior • IA Specialist
-          </p>
-          <div className="flex justify-center gap-6">
-            <a href="#" className="text-slate-600 hover:text-blue-600 transition text-sm font-medium">GitHub</a>
-            <a href="#" className="text-slate-600 hover:text-blue-600 transition text-sm font-medium">LinkedIn</a>
-            <a href="#" className="text-slate-600 hover:text-blue-600 transition text-sm font-medium">Email</a>
-          </div>
-        </div>
-      </footer>
+### **Backend**
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/-Express-000000?style=flat&logo=express&logoColor=white)
+![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=flat&logo=graphql&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 
-      <style>{`
-        @keyframes gradient-shift {
-          0%, 100% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-        }
+### **Banco de Dados**
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+![DynamoDB](https://img.shields.io/badge/-DynamoDB-527FFF?style=flat&logo=amazondynamodb&logoColor=white)
+![SQL Server](https://img.shields.io/badge/-SQL%20Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
+![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=flat&logo=prisma&logoColor=white)
 
-        .animate-gradient {
-          background-size: 200% 200%;
-          animation: gradient-shift 3s ease infinite;
-        }
-      `}</style>
-    </div>
-  );
-}
+### **Cloud & DevOps**
+![Azure](https://img.shields.io/badge/-Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white)
+![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)
+![CI/CD](https://img.shields.io/badge/-CI%2FCD-333333?style=flat&logo=githubactions&logoColor=white)
+
+---
+
+## 🚀 Projetos em Destaque
+
+### 1️⃣ **Plataforma de Automação Generativa Corporativa**
+Solução end-to-end combinando Azure OpenAI, n8n, Python e Next.js para automações em documentos, OCR e processamento de dados em alto volume.
+
+- **Stack**: Azure OpenAI • n8n • Python • PostgreSQL • Next.js
+- **Impacto**: 500K+ documentos/mês • 99.2% acurácia • 95% redução manual
+- **Arquitetura**: Serverless • Event-driven • RAG pipeline
+
+### 2️⃣ **Microsserviços Escaláveis com Observabilidade Total**
+Arquitetura de microsserviços em Node.js/Express com GraphQL, telemetria, tracing distribuído e alta disponibilidade.
+
+- **Stack**: Node.js • Express • GraphQL • PostgreSQL • Kubernetes
+- **Impacto**: 99.99% uptime • <100ms latência • Escalabilidade 10x
+- **Arquitetura**: Microsserviços • Event-driven • Observabilidade 360°
+
+### 3️⃣ **Dashboard de IA com Real-time Analytics**
+Next.js + React com SSR otimizado, integração com Claude/OpenAI para análise preditiva e visualizações em tempo real.
+
+- **Stack**: Next.js • React • TypeScript • Claude API • WebSocket
+- **Impacto**: 100K+ usuários • 99º percentil performance • LCP 1.2s
+- **Arquitetura**: SSR/SSG • Real-time • Otimização extrema
+
+### 4️⃣ **Pipeline de IA com Governança e Rastreabilidade**
+Solução Azure + AWS Bedrock + n8n para orquestração de LLMs com versionamento, validação e mitigação de alucinações.
+
+- **Stack**: Azure • AWS Bedrock • n8n • Python • FastAPI
+- **Impacto**: Zero alucinações • Auditoria 100% • <2s latência
+- **Arquitetura**: Multi-cloud • Governance • Version control IA
+
+### 5️⃣ **Sistema de Integração Multi-Cloud Corporativa**
+Integração Azure + AWS com REST/GraphQL, processamento de eventos em alta escala e disaster recovery.
+
+- **Stack**: Azure • AWS • REST API • GraphQL • Kubernetes
+- **Impacto**: 99.9% disponibilidade • Zero data loss • Failover automático
+- **Arquitetura**: Multi-region • Event-streaming • Resiliente
+
+### 6️⃣ **Copilot Inteligente para Processos Corporativos**
+Agente IA customizado integrado a sistemas legados, processando consultas em linguagem natural com raciocínio multi-step.
+
+- **Stack**: Claude API • OpenAI • Node.js • React • Graph Database
+- **Impacto**: 99% acurácia • 40% redução trabalho manual • 5K+ usuários
+- **Arquitetura**: Agent-based • LLM reasoning • Legacy integration
+
+---
+
+## 📊 Domínio Técnico
+
+| Expertise | Nível |
+|-----------|-------|
+| **IA Generativa** | ████████████████████ 95% |
+| **Arquitetura Full Stack** | ████████████████████ 98% |
+| **Cloud (Azure & AWS)** | ███████████████████░ 96% |
+| **Escalabilidade & Performance** | ████████████████████ 97% |
+| **DevSecOps & Observabilidade** | ███████████████████░ 94% |
+| **Governança & Segurança** | ██████████████████░░ 93% |
+
+---
+
+## 💡 Filosofia de Arquitetura
+
+> "Arquitetura não é só código, é decisão. Cada escolha deve ter impacto mensurável no negócio."
+
+### Princípios que Guiam Meu Trabalho
+
+1. **Simplicidade Complexa** — Soluções sofisticadas que parecem simples
+2. **Escalabilidade desde o Início** — Não corrigir depois, desenhar agora
+3. **Observabilidade Total** — "O que não é medido, não é conhecido"
+4. **Resiliência Ativa** — Preparado para falhar graciosamente
+5. **IA como Ferramenta** — Não como mágica, mas como engenharia
+6. **Segurança por Design** — Não adicionada depois
+7. **Impacto Comprovado** — Tudo em números reais
+
+---
+
+## 🎯 Serviços & Disponibilidade
+
+Especializado em:
+
+- ✅ **Arquitetura de Soluções IA** — Design de sistemas com IA generativa
+- ✅ **Full Stack Engineering** — Implementação de ponta a ponta
+- ✅ **Cloud Architecture** — Azure, AWS, multi-region, serverless
+- ✅ **Tech Leadership** — Mentoria, code review, decisões arquiteturais
+- ✅ **Integração Corporativa** — APIs, sistemas legados, ERPs, CRMs
+- ✅ **Performance & Scalability** — Otimização, load testing, resilience
+- ✅ **DevSecOps & Observabilidade** — Pipelines, monitoramento, segurança
+
+**Status**: 🟢 Disponível para novos projetos
+
+---
+
+## 📚 Artigos & Conteúdo
+
+Compartilho conhecimento sobre arquitetura, IA e engenharia:
+
+- 📖 Blog em construção
+- 🎬 Webinars sobre IA Generativa & Arquitetura
+- 🔗 Contribuições em open source
+
+---
+
+## 📬 Contato & Redes
+
+<div align="center">
+
+| Canal | Link |
+|-------|------|
+| 💼 **LinkedIn** | [linkedin.com/in/leonardo-nogueira](https://linkedin.com/in/leonardo-nogueira) |
+| 🐙 **GitHub** | [github.com/leonardonogueiratech](https://github.com/leonardonogueiratech) |
+| 📧 **Email** | [leonardo@email.com](mailto:leonardo@email.com) |
+| 🌐 **Portfólio** | [seu-site.com](https://seu-site.com) |
+
+</div>
+
+---
+
+## 🏆 Estatísticas
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=leonardonogueiratech&theme=github_dark&show_icons=true&hide_border=true&count_private=true&include_all_commits=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=leonardonogueiratech&theme=github_dark&hide_border=true&layout=compact)
+
+</div>
+
+---
+
+## 🔄 Fluxo de Trabalho Típico
+
+```
+Descoberta & Análise
+        ↓
+Design Arquitetural (Diagrams, ADRs)
+        ↓
+Prototipagem & PoC
+        ↓
+Implementação Full Stack
+        ↓
+Testes, Observabilidade, DevOps
+        ↓
+Deployment & Monitoramento
+        ↓
+Continuous Improvement
+```
+
+---
+
+## 🎓 Certificações & Aprendizado Contínuo
+
+- ☁️ Azure Solutions Architect
+- ☁️ AWS Solutions Architect
+- 🤖 IA Generativa & LLMs Specialization
+- 📚 Sempre aprendendo novas tecnologias
+
+---
+
+## 📄 Licença & Direitos
+
+Meu trabalho em open source é licenciado sob MIT. Meu conhecimento é compartilhado com a comunidade.
+
+---
+
+<div align="center">
+
+### "Construir soluções que importam" 🚀
+
+**Pronto para transformar sua visão em arquitetura?**
+
+[Vamos Conversar!](mailto:leonardo@email.com)
+
+---
+
+<img src="https://komarev.com/ghpvc/?username=leonardonogueiratech&color=0077B5" alt="Profile views">
+
+© 2024 Leonardo Nogueira. Todos os direitos reservados.
+
+</div>
