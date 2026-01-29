@@ -1,4 +1,4 @@
-# 👨‍💻 Leonardo Nogueira - Arquiteto de Soluções IA & Full Stack Senior
+# 👨‍💻 Leonardo Nogueira - Desenvolvedor de Soluções IA & Full Stack Senior
 
 <div align="center">
 
