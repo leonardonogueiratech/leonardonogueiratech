@@ -1,4 +1,4 @@
-# 👨‍💻 Leonardo Nogueira - Desenvolvedor de Soluções IA & Full Stack Senior
+# 👨‍💻 Leonardo Nogueira - Desenvolvedor Full Stack Senior & Soluções IA
 
 <div align="center">
 
@@ -6,7 +6,7 @@
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/leonardonogueiratech)
 [![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:leonardo@email.com)
 
-**Especialista em Arquitetura IA Generativa + Cloud + Full Stack**
+**Desenvolvedor Full Stack Senior | Especialista em IA Generativa + Cloud**
 
 ![Profile Views](https://komarev.com/ghpvc/?username=leonardonogueiratech&color=0077B5)
 
@@ -16,21 +16,21 @@
 
 ## 🎯 Sobre Mim
 
-Arquiteto de Soluções especializado em transformar processos complexos em **sistemas escaláveis, inteligentes e orientados à IA Generativa**. 
+Desenvolvedor Full Stack Senior especializado em transformar processos complexos em **sistemas escaláveis, inteligentes e orientados à IA Generativa**. 
 
-Combino engenharia de software, cloud architecture, automação generativa e desenvolvimento full stack para entregar soluções **corporativas de alto impacto** — da arquitetura ao deployment em produção.
+Combino engenharia de software, cloud, automação generativa e desenvolvimento full stack para entregar soluções **corporativas de alto impacto** — do desenvolvimento ao deployment em produção.
 
 ### ✨ Diferencial
 
 - 🧠 **IA Generativa**: Integração de OpenAI, Azure OpenAI, AWS Bedrock, Claude, Gemini e LLMs customizados
-- 🏗️ **Arquitetura Full Stack**: Design end-to-end com foco em escalabilidade e performance
+- 🏗️ **Full Stack Development**: Desenvolvimento end-to-end com foco em escalabilidade e performance
 - ☁️ **Cloud Expert**: Azure e AWS em arquiteturas serverless, multi-region, disaster recovery
 - ⚙️ **Engenharia Sênior**: Clean Architecture, SOLID, DDD, observabilidade, DevSecOps
 - 📊 **Impacto Comprovado**: 60% redução em tempo de resposta, 95% menos erros, 99.9% uptime
 
 ---
 
-## 📈 Impacto Arquitetural
+## 📈 Impacto em Projetos
 
 | Métrica | Resultado | Descrição |
 |---------|-----------|-----------|
@@ -56,7 +56,7 @@ Integração e operação de modelos avançados para automação, análise e int
 ✓ Governança, Versionamento & Rastreabilidade
 ```
 
-### 🏗️ **Arquitetura Full Stack**
+### 🏗️ **Desenvolvimento Full Stack**
 Soluções end-to-end escaláveis, com foco em performance, segurança e user experience.
 
 ```
@@ -66,7 +66,7 @@ Patterns:  Clean Architecture • SOLID • DDD • Event-Driven
 ```
 
 ### ☁️ **Cloud & Infraestrutura**
-Arquiteturas em Azure e AWS com foco em disponibilidade, escalabilidade e observabilidade.
+Desenvolvimento em Azure e AWS com foco em disponibilidade, escalabilidade e observabilidade.
 
 ```
 Azure:     Functions • App Services • Storage • Identity • Cognitive Services
@@ -75,7 +75,7 @@ DevOps:    Docker • Kubernetes • CI/CD • GitHub Actions • Terraform
 ```
 
 ### ⚙️ **Engenharia & Boas Práticas**
-Excelência técnica, arquitetura resiliente e redução contínua de débito técnico.
+Excelência técnica, código resiliente e redução contínua de débito técnico.
 
 ```
 ✓ Clean Architecture & SOLID Principles
@@ -140,42 +140,42 @@ Solução end-to-end combinando Azure OpenAI, n8n, Python e Next.js para automa�
 
 - **Stack**: Azure OpenAI • n8n • Python • PostgreSQL • Next.js
 - **Impacto**: 500K+ documentos/mês • 99.2% acurácia • 95% redução manual
-- **Arquitetura**: Serverless • Event-driven • RAG pipeline
+- **Destaque**: Serverless • Event-driven • RAG pipeline
 
 ### 2️⃣ **Microsserviços Escaláveis com Observabilidade Total**
-Arquitetura de microsserviços em Node.js/Express com GraphQL, telemetria, tracing distribuído e alta disponibilidade.
+Desenvolvimento de microsserviços em Node.js/Express com GraphQL, telemetria, tracing distribuído e alta disponibilidade.
 
 - **Stack**: Node.js • Express • GraphQL • PostgreSQL • Kubernetes
 - **Impacto**: 99.99% uptime • <100ms latência • Escalabilidade 10x
-- **Arquitetura**: Microsserviços • Event-driven • Observabilidade 360°
+- **Destaque**: Microsserviços • Event-driven • Observabilidade 360°
 
 ### 3️⃣ **Dashboard de IA com Real-time Analytics**
 Next.js + React com SSR otimizado, integração com Claude/OpenAI para análise preditiva e visualizações em tempo real.
 
 - **Stack**: Next.js • React • TypeScript • Claude API • WebSocket
 - **Impacto**: 100K+ usuários • 99º percentil performance • LCP 1.2s
-- **Arquitetura**: SSR/SSG • Real-time • Otimização extrema
+- **Destaque**: SSR/SSG • Real-time • Otimização extrema
 
 ### 4️⃣ **Pipeline de IA com Governança e Rastreabilidade**
 Solução Azure + AWS Bedrock + n8n para orquestração de LLMs com versionamento, validação e mitigação de alucinações.
 
 - **Stack**: Azure • AWS Bedrock • n8n • Python • FastAPI
 - **Impacto**: Zero alucinações • Auditoria 100% • <2s latência
-- **Arquitetura**: Multi-cloud • Governance • Version control IA
+- **Destaque**: Multi-cloud • Governance • Version control IA
 
 ### 5️⃣ **Sistema de Integração Multi-Cloud Corporativa**
 Integração Azure + AWS com REST/GraphQL, processamento de eventos em alta escala e disaster recovery.
 
 - **Stack**: Azure • AWS • REST API • GraphQL • Kubernetes
 - **Impacto**: 99.9% disponibilidade • Zero data loss • Failover automático
-- **Arquitetura**: Multi-region • Event-streaming • Resiliente
+- **Destaque**: Multi-region • Event-streaming • Resiliente
 
 ### 6️⃣ **Copilot Inteligente para Processos Corporativos**
 Agente IA customizado integrado a sistemas legados, processando consultas em linguagem natural com raciocínio multi-step.
 
 - **Stack**: Claude API • OpenAI • Node.js • React • Graph Database
 - **Impacto**: 99% acurácia • 40% redução trabalho manual • 5K+ usuários
-- **Arquitetura**: Agent-based • LLM reasoning • Legacy integration
+- **Destaque**: Agent-based • LLM reasoning • Legacy integration
 
 ---
 
@@ -184,7 +184,7 @@ Agente IA customizado integrado a sistemas legados, processando consultas em lin
 | Expertise | Nível |
 |-----------|-------|
 | **IA Generativa** | ████████████████████ 95% |
-| **Arquitetura Full Stack** | ████████████████████ 98% |
+| **Desenvolvimento Full Stack** | ████████████████████ 98% |
 | **Cloud (Azure & AWS)** | ███████████████████░ 96% |
 | **Escalabilidade & Performance** | ████████████████████ 97% |
 | **DevSecOps & Observabilidade** | ███████████████████░ 94% |
@@ -192,9 +192,9 @@ Agente IA customizado integrado a sistemas legados, processando consultas em lin
 
 ---
 
-## 💡 Filosofia de Arquitetura
+## 💡 Filosofia de Desenvolvimento
 
-> "Arquitetura não é só código, é decisão. Cada escolha deve ter impacto mensurável no negócio."
+> "Código não é só lógica, é decisão. Cada escolha deve ter impacto mensurável no negócio."
 
 ### Princípios que Guiam Meu Trabalho
 
@@ -212,10 +212,10 @@ Agente IA customizado integrado a sistemas legados, processando consultas em lin
 
 Especializado em:
 
-- ✅ **Arquitetura de Soluções IA** — Design de sistemas com IA generativa
-- ✅ **Full Stack Engineering** — Implementação de ponta a ponta
-- ✅ **Cloud Architecture** — Azure, AWS, multi-region, serverless
-- ✅ **Tech Leadership** — Mentoria, code review, decisões arquiteturais
+- ✅ **Desenvolvimento Full Stack** — Implementação de ponta a ponta
+- ✅ **Soluções com IA Generativa** — Desenvolvimento de sistemas com IA generativa
+- ✅ **Cloud Development** — Azure, AWS, multi-region, serverless
+- ✅ **Tech Leadership** — Mentoria, code review, decisões técnicas
 - ✅ **Integração Corporativa** — APIs, sistemas legados, ERPs, CRMs
 - ✅ **Performance & Scalability** — Otimização, load testing, resilience
 - ✅ **DevSecOps & Observabilidade** — Pipelines, monitoramento, segurança
@@ -226,10 +226,10 @@ Especializado em:
 
 ## 📚 Artigos & Conteúdo
 
-Compartilho conhecimento sobre arquitetura, IA e engenharia:
+Compartilho conhecimento sobre desenvolvimento, IA e engenharia:
 
 - 📖 Blog em construção
-- 🎬 Webinars sobre IA Generativa & Arquitetura
+- 🎬 Webinars sobre IA Generativa & Desenvolvimento
 - 🔗 Contribuições em open source
 
 ---
@@ -266,11 +266,11 @@ Compartilho conhecimento sobre arquitetura, IA e engenharia:
 ```
 Descoberta & Análise
         ↓
-Design Arquitetural (Diagrams, ADRs)
+Design & Planejamento Técnico
         ↓
 Prototipagem & PoC
         ↓
-Implementação Full Stack
+Desenvolvimento Full Stack
         ↓
 Testes, Observabilidade, DevOps
         ↓
@@ -300,7 +300,7 @@ Meu trabalho em open source é licenciado sob MIT. Meu conhecimento é compartil
 
 ### "Construir soluções que importam" 🚀
 
-**Pronto para transformar sua visão em arquitetura?**
+**Pronto para transformar sua visão em realidade?**
 
 [Vamos Conversar!](mailto:leonardo@email.com)
 
